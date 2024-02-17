@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Threenineone</title>
+    <link rel="shortcut icon" href="images/kittyboard.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/about_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer>
+      let i = 0;
+      let text = "";
+      let speed = 70;
+
+      function aboutMe(button) {
+        if(i < text.length) {
+            document.getElementById("aboutMe").innerHTML += text.charAt(i);
+            i++;
+            setTimeout(aboutMe, speed);
+        }
+      }
+    </script>
+  </head>
+
+  <body id="aboutBody">
+    
+    <div class="firstdiv">
+    <header class="topheader">
+      <nav>
+
+          <ul class="topnav" style="text-align: right;">
+              <li>
+                  <a href="start.html">
+                      <font color="pink">Home</font>
+                  </a>
+              </li>
+              <li>
+                  <a href="about.html">
+                      <font color="pink">About</font>
+                  </a>
+              </li>
+              <li>
+                  <a href="projects.html">
+                      <font color="pink">Projects</font>
+                  </a>
+              </li>
+              <li>
+                  <a href="guides.html">
+                      <font color="pink">Guides</font>
+    <section>
+      <article class="neofetch">
+        <h2>[threenineone@rt ~ ]$ neofetch</h2>
+        <div id="details">
+          <figure>
+            <img src="images/arch.png" id="avatar" alt="Arch logo" width="300px">
+          </figure>
+          <ul>
+            <li><label>threenineone@rt</label></li>
+            <li>-------------</li>
+            <li><label>Name</label>: Threenineone / Aiclys</li>
+            <li><label>Job</label>: Student</li>
+            <li><label>Religion</label>: GNU</li>
+            <li><label>Gender</label>: Male</li>
+            <li><label>Email</label>: aiclys@proton.me</li>
+            <li><label>Website</label>: <a href="https://threenineone.org">www.threenineone.org</a></li>
+            <li><label>Country</label>: Germany</li>
+            <li><label>Reddit</label>: reddit.com/u/Aiclys</li>
+          </ul>
+        </div>
+      </article>
+    </section>  
+  </body>
+</html>
