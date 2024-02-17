@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Threenineone</title>
+    <link rel="shortcut icon" href="images/kittyboard.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer>
+      let i = 0;
+      let text = "I'm a 15-year-old high school student who programs random projects for fun. I'm interested in data science & software/videogame development.";
+      let speed = 65;
+
+      function typeWriter(button) {
+        if(i < text.length) {
+            document.getElementById("about-message").innerHTML += text.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
+      }
+    </script>
+  </head>
+  <body onload="typeWriter()">
+    <p id="about-message"></p>
+  </body>
+</html>
