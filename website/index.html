@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Threenineone</title>
+    <link rel="shortcut icon" href="images/kittyboard.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/style.css">
+    <script defer>
+      let i = 0;
+      let text = "Do you want to enter the wired?";
+      let speed = 80;
+
+      function introText(button) {
+        if(i < text.length) {
+            document.getElementById("intro").innerHTML += text.charAt(i);
+            i++;
+            setTimeout(introText, speed);
+        }
+      }
+    </script>
+  </head>
+  <body onload="introText()" id="introBody">
+    <p id="intro"><b></b></p>
+    <div id="introDiv">
+      <button id="yesButton" onclick="window.open('intro.html')">YES</button>
+      <button id="noButton" onclick="window.open('no.html')">NO</button>
+    </div>
+  </body>
+</html>
